@@ -1,0 +1,66 @@
+/*--------------*\
+    Boxes Section
+\*--------------*/
+.box{
+    padding: 30px;
+    border-radius: 8px;
+    height: 100%;
+     box-shadow: 0px 0px 5px 0px rgba(179,179,179,0.75);
+    -webkit-box-shadow: 0px 0px 5px 0px rgba(179,179,179,0.75);
+    -moz-box-shadow: 0px 0px 5px 0px rgba(179,179,179,0.75);
+    .service_icon{
+        display: flex;
+        align-items: center;
+        margin-bottom: 12px;
+        span{
+            display: inline-block;
+            margin-right: 10px;
+            width: 70px;
+            img{
+                width: 100%;
+            }
+        }
+    }
+}
+
+.section_component{
+    .component_content{
+        h2{
+            margin-bottom: 20px;
+        }
+        h5{
+            margin-top: 40px;
+        }
+            }
+        h5{
+            margin-top: 40px;
+            font-weight: 500;
+        }
+    }
+    .system_flow_card{
+        background-color: #3f3f3f;
+        display: flex;
+        align-items: center;
+        flex-flow: column;
+        padding: 30px;
+        min-height: 354px;
+        > span{
+            display: block;
+            background-color: white;
+            width: 102px;
+            height: 102px;
+            border-radius: 100px;
+            display: flex;
+            justify-content: center;
+            align-self: center;
+            padding: 20px;
+        }
+        h5{
+            color: white;
+            margin-bottom: 20px;
+        }
+        p{
+            color: white;
+            text-align: center;
+        }
+    }

@@ -1,0 +1,80 @@
+/*--------------*\
+    Modals Section
+\*--------------*/
+.login_modal{
+        .modal-dialog{
+            max-width: 1000px;
+            .modal-content{
+                border-radius: 14px;
+            .modal-body{
+                padding: 0;
+                position: relative;
+                .btn-close{
+                    position: absolute;
+                    right: 20px;
+                    top: 20px;
+                    z-index: 9;
+                    color: $white;
+                    width: 10px;
+                    height: 10px;
+                    &:focus{
+                        outline: none;
+                        box-shadow: none;
+                    }
+                }
+                .modal_row{
+                    display: flex;
+                    h4{
+                        color: #1E272E;
+                        margin-bottom: 40px;
+                        text-align: center;
+                    }
+                    .login_form{
+                        width: 50%;
+                        display: flex;
+                        flex-flow: column;
+                        justify-content: center;
+                        padding: 50px;
+                    }
+                    .login_content{
+                        width: 50%;
+                        position: relative;
+                        img{
+                            border-top-right-radius: 10px;
+                            border-bottom-right-radius: 10px;
+                        }
+                        .login_detail{
+                            position: absolute;
+                            top: 50%;
+                            left: 50%;
+                            transform: translate(-50%,-50%);
+                            width: 100%;
+                            text-align: center;
+                            padding: 20px;
+                            h2{
+                                color: $white;
+                                margin: 35px 0 22px;
+                            }
+                            p{
+                                color: $white;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+.vedio_mdoal{
+    .modal-body{
+        padding: 0;
+    }
+ .modal-dialog{
+    max-width: 1000px;
+    height: 100%;
+    .modal-content{
+        height: 600px;
+    }
+ }
+}

@@ -1,0 +1,131 @@
+/*--------------*\
+    Base
+\*--------------*/
+
+body {
+  font-family: $main-font-family;
+  font-size: $main-font-size;
+  font-weight: $font-regular;
+  @include grid-md-down{
+    font-size: 14px;
+ }
+}
+.container{
+  max-width: 1250px;
+}
+h1,h2,h3,h4,h5,h6{
+  font-family: $sec-font-family;
+  margin-bottom: 0;
+  font-weight: 700;
+}
+p{
+  margin-bottom: 0;
+}
+h1{
+  font-size: $font-size-h1;
+  @include grid-md-down{
+   font-size: 30px;
+}
+}
+
+h2{
+  font-size: $font-size-h2;
+  @include grid-md-down{
+   font-size: 25px;
+    }
+}
+h2{
+  &.main_title{
+    font-size: 45px;
+    @include grid-md-down{
+     font-size: 28px;
+      }
+  }
+}
+h3{
+  font-size: $font-size-h3;
+}
+h4{
+  font-size: $font-size-h4;
+}
+h5{
+  font-size: $font-size-h5;
+  @include grid-md-down{
+   font-size: 21px;
+    }
+}
+h6{
+  font-size: $font-size-h6;
+}
+.is_flex{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.section{
+  padding: 80px 0;
+  @include grid-md-down{
+  padding: 40px 0;
+  }
+}
+  .section_pt{
+    padding-top: 80px;
+    @include grid-md-down{
+      padding-top: 40px;
+      }
+  }
+  .section_pb{
+    padding-bottom: 80px;
+    @include grid-md-down{
+      padding-bottom: 40px;
+      }
+  }
+.brand_titile{
+  color: #ED1B24;
+  font-weight: 18px;
+  font-weight: 500;
+  margin-bottom: 12px;
+}
+.m-minus-t{
+  position: relative ;
+  top: -5px;
+  @include grid-md-down{
+   top: 0;
+  }
+}
+
+.is_flex{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  @include grid-md-down{
+    align-items: flex-start;
+    flex-flow: column;
+  }
+}
+
+.mob_rev{
+  @include grid-md-down{
+    flex-direction: column-reverse;
+  }
+}
+
+
+.mw_80{
+  max-width: 80%;
+  @include grid-md-down{
+    max-width: 100%;
+  }
+}
+.pl_80{
+  padding-left: 80px;
+  @include grid-md-down{
+    padding-left: 0px;
+  }
+}
+.pr_80{
+  padding-right: 80px;
+  @include grid-md-down{
+    padding-right: 0px;
+  }
+}

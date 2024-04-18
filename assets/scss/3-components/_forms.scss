@@ -1,0 +1,293 @@
+/*--------------*\
+    Form Section
+\*--------------*/
+form{
+    .form-group{
+        margin-bottom: 20px;
+        input{
+            border: 1px solid #DADADA;
+            background-color: #dadada70;
+            border-radius: 30px;
+            color: #949494;
+            padding: 11px 20px;
+            &::placeholder{
+                color: #949494;
+            }
+            &:focus{
+                box-shadow: none;
+                border: 1px solid rgb(30, 216, 30);
+            }
+        }
+        a{
+            &:hover{
+                color: $black !important;
+            }
+        }
+    }
+    .form_row{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 30px;
+        label{
+            font-size: 16px;
+        }
+        a{
+            font-size: 16px;
+            color: $black;
+            text-decoration: none;
+            &:hover{
+                text-decoration: underline;
+            }
+        }
+    }
+}
+
+
+.main_form{
+    border: 1px solid #BABABA;
+    padding: 64px;
+    border-radius: 9px;
+    position: relative;
+    > h3{
+        position: absolute;
+        top: -30px;
+        left: 50%;
+        transform: translate(-50%);
+        padding: 7px 50px;
+        background-color: white;
+    } 
+    .form_list{
+        background-color: #fafbfc;
+        border: 1px solid #BABABA;
+        padding: 47px;
+        border-radius: 9px;
+        margin-bottom: 36px;
+        .form_title{
+            margin-bottom: 40px;
+            &.is_borderd{
+                padding-top: 70px;
+                margin-top: 70px;
+                border-top: 1px solid #BABABA;
+            }
+        }
+        .form_fields{
+             .row {
+                + .row{
+                    margin-top: 30px;
+                }
+             }
+            input,select,textarea{
+                border: 1px solid #DADADA;
+                background-color: #f0f1f2;
+                padding: 10px 26px;
+                border-radius: 50px;
+                color: #6c757d;
+                option{
+                    color: #6c757d;
+                }
+            }
+            textarea{
+                width: 100%;
+                min-height: 135px;
+                border-radius: 15px;
+                &:focus{
+                    box-shadow: 0 0 0 0.25rem rgba(13,110,253,.25);
+                    border: none;
+                }
+                &:focus-visible{
+                   outline: none;
+                }
+            }
+        }
+    }
+}
+
+
+.contact_detail{
+    padding-top: 50px;
+    h3{
+    margin-bottom: 82px;
+    }
+.detail_item{
+    box-shadow: 0px 0px 5px 0px rgba(179,179,179,0.75);
+    -webkit-box-shadow: 0px 0px 5px 0px rgba(179,179,179,0.75);
+    -moz-box-shadow: 0px 0px 5px 0px rgba(179,179,179,0.75);
+    padding: 20px;
+    border-radius: 9px;  
+    display: flex;
+    align-items: center;
+    margin-bottom: 56px;
+    .detail_icon{
+        background-color: rgba(237, 50 ,61, 0.12);
+        width: 70px;
+        height: 70px;
+        border-radius: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-right: 11px;
+        i{
+            color: #ED323D;
+            font-size: 20px;
+        }
+
+    }
+    .detail_info {
+        p{
+            color: grey;
+            font-size: 20px;
+            margin-bottom: 17px;
+        }
+        h5{
+            font-size: 28px;
+        }
+    }
+
+
+    }
+}
+
+
+.section_contact_form{
+    .main_form{
+        padding: 50px;
+        border: none;
+        box-shadow: 0px 0px 5px 0px rgba(179,179,179,0.75);
+        -webkit-box-shadow: 0px 0px 5px 0px rgba(179,179,179,0.75);
+        -moz-box-shadow: 0px 0px 5px 0px rgba(179,179,179,0.75);
+    }
+    .form_list{
+        border: none;
+        box-shadow: none;
+        background-color: transparent;
+        padding: 0 ;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.checkbox {
+    .form-group {
+      display: block;
+      margin-bottom: 15px;
+    }
+    
+    .form-group input {
+      padding: 0;
+      height: initial;
+      width: initial;
+      margin-bottom: 0;
+      display: none;
+      cursor: pointer;
+    }
+    
+    .form-group label {
+      position: relative;
+      cursor: pointer;
+    }
+    
+    .form-group label:before {
+      content:'';
+      background-color: transparent;
+      border: 2px solid #6c757d;
+      box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05), inset 0px -15px 10px -12px rgba(0, 0, 0, 0.05);
+      padding: 7px;
+      display: inline-block;
+      position: relative;
+      vertical-align: middle;
+      cursor: pointer;
+      margin-right: 5px;
+      margin-top: -4px;
+    }
+    label{
+  margin-left: 0 !important;
+    }
+    .form-group input:checked + label:after {
+      content: '';
+      display: block;
+      position: absolute;
+      top: 5px;
+      left: 7px;
+      width: 5px;
+      height: 11px;
+      border: solid #6c757d;
+      border-width: 0 2px 2px 0;
+      transform: rotate(45deg);
+    }
+  }
+  
+
+
+  .filter_nav{
+    margin-bottom: 60px;
+    border-bottom: 1px solid #6c757d;
+    padding-bottom: 20px;
+   >  ul{
+        list-style: none;
+        padding: 0;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        > li{
+          >  a{
+            padding: 7px 20px;
+            font-size: 13px;
+            border: none;
+            text-decoration: none;
+            color: black;
+            background-color: #f3f3f3;
+            border-radius: 20px;
+            position: relative;
+           > span{
+            background-color: $brand;
+            padding: 1px 6px;
+            border-radius: 30px;
+            font-size: 8px;
+            color: white;
+            position: absolute;
+            top: -7px;
+            right: -5px;
+            }
+            }
+            &:focus{
+                outline: none;
+                box-shadow: none;
+            }
+            .dropdown{
+                button{
+                    padding: 5px 20px;
+                    font-size: 13px;
+                    background-color: #1B1B1B;
+                    border: none;
+                    &:focus{
+                        outline: none;
+                        box-shadow: none;
+                    }
+                }
+                ul{
+                    li{
+                        a{
+                            font-size: 13px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+  }
+  

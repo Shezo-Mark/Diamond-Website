@@ -1,0 +1,104 @@
+/*-----------------*\
+    Button Section
+\*-----------------*/
+
+.btn{
+  padding: 8px 38px;
+  font-size: 18px;
+  border: 1px solid $brand;
+  border-radius: 50px;
+  color: $white;
+  transition: .6s;
+  @include grid-md-down{
+   font-size: 13px;
+   padding: 7px 30px;
+ }
+  &:hover,
+  &:focus{
+    outline: none;
+  }
+  &.btn_barnd_fill{
+    background-color: $brand;
+    &:hover{
+      background-color: transparent;
+      color: $white;
+    }
+    &.hover_white{
+    &:hover{
+      color: white;
+    }
+    }
+  }
+  &.btn_barnd_outline{
+    background-color: transparent;
+    &:hover{
+      background-color: $brand;
+      color: $white !important;
+    }
+  }
+  &.btn_brand_fill_white  {
+    background-color: $white;
+    border-radius: 8px;
+    color: $black;
+    border: 1px solid $white;
+    &:hover{
+      background-color: #d12c36;
+      border:1px solid  $brand;
+      color: $white;
+    }
+  }
+}
+.dark_brand{
+  &:hover{
+    background-color: #d12c36;
+  }
+}
+.btn_brand_dark{
+  background-color: #d12c36;
+}
+
+
+
+
+.form_link{
+  display: block;
+  border: 1px solid #BABABA;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 23px;
+  font-weight: 600;
+  color: $black;
+  width: 100%;
+}
+
+.links{
+  .is_flex{
+    + .is_flex{
+      margin-top: 30px;
+    }
+    &.justify-content-start{
+      span{
+        +span{
+          margin-left: 20px;
+        }
+      }
+    }
+    span{
+      display: inline-block;
+      a{
+        background-color: white;
+        border: 1px solid white;
+        padding: 4px 10px;
+        text-decoration: none;
+        color: $black;
+        font-size: 13px;
+        &:hover{
+          background-color: transparent;
+          color: white;
+        }
+      }
+    }
+  }
+}

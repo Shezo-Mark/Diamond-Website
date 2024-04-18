@@ -1,0 +1,104 @@
+/*--------------*\
+    header Section
+\*--------------*/
+header{
+    @include grid-md-down{
+        .navbar-toggler {
+            padding: 7px;
+            border: 1px solid #ED323D;
+            span{
+                display: block;
+                background-color: #ED323D;
+                width: 20px;
+                height: 2px;
+                border-radius: 2px;
+                +span{
+                    margin-top: 3px;
+                }
+            }
+            &:focus{
+                outline: none;
+                box-shadow: none;
+            }
+        }
+        .mob_logo{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            a{
+                display: inline-block;
+            }
+        }
+    }
+    .navbar-collapse{
+        @include grid-md-down{
+            position: fixed;
+            top: 0px;
+            left: -100%;
+            bottom: 0;
+            width: 100%;
+            background: $black;
+            height: 100%;
+            transition: 0.5s;
+            padding: 50px 20px 30px 10px;
+            z-index: 99;
+            overflow-y: auto;
+            &.show{
+                left: 0;
+            }
+            ul {
+                height: 100vh;
+            }
+
+          }
+
+
+    }
+    .header_top{
+       padding: 6px 0;
+       background-color: $black;
+       a{
+         font-size: 12px;
+         color: $white;
+         text-decoration: none;
+         @include grid-md-down{
+            font-size: 9px;
+          }
+        i{
+            color: $brand;
+            margin-right: 10px;
+        }
+       }
+    }
+    .header_main{
+        padding: 7px 0;
+        .navbar-brand{
+            width: 160px;
+        }
+        .navbar{
+            .navbar-nav{
+                li{
+                    + li{
+                        margin-left: 40px;
+                        @include grid-md-down{
+                            margin-left: 0;
+                          }
+                    }
+                    a{
+                        color: $black !important;
+                        @include grid-md-down{
+                            color: $white !important;
+                        }
+
+                    }
+                }
+            } 
+        }
+        .btn{
+            padding: 4px 20px;
+            &:hover{
+                color: $black;
+              }
+        }
+       }
+}

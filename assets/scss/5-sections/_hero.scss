@@ -1,0 +1,38 @@
+/*--------------*\
+    Hero Section
+\*--------------*/
+.section_hero{
+    padding: 0 20px;
+    @include grid-md-down{
+        padding: 0 10px;
+    }
+    .bg_dark{
+        border-radius: 20px;
+        padding: 200px 0 80px;
+        @include grid-md-down{
+            padding: 40px 0 40px;
+        }
+        p{
+            max-width: 540px;
+        }
+        .hero_slider{
+            .owl-nav{
+                display: flex;
+                justify-content: end;
+                width: 100%;
+                margin-top: 80px;
+                @include grid-md-down{
+                  display: none;
+                }
+                .owl-prev{
+                    margin-right: 100px;
+                }
+                button{
+                    background-color: transparent;
+                }
+            }
+        }
+    }
+}
+
+
