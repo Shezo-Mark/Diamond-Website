@@ -8,6 +8,11 @@
     padding: 0 20px;
     @include grid-md-down{
        padding: 0 10px;
+       .footer_content{
+        margin-top: 40px;
+        padding: 0 20px;
+        margin-bottom: 20px;
+       }
        }
     .container{
         .row{
@@ -43,6 +48,9 @@
         }
         .footer_nav{
             list-style: none;
+            @include grid-md-down{
+                padding-left: 1rem;
+            }
             h5{
                 color: white;
                 margin-bottom: 20px;
@@ -62,6 +70,9 @@
         display: flex;
         align-items: center;
         justify-content: end;
+        @include grid-md-down{
+            justify-content: center;
+        }
         span{
             width: 40px;
             height: 40px;
